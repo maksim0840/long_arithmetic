@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_file.dir/test/test.cpp.o -o test_file  libLongNums.a libCalcPi.a lib/libgtest_main.a lib/libgtest.a 

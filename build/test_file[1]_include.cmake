@@ -1,0 +1,5 @@
+if(EXISTS "/home/user/Documents/redactor bobba/build/test_file[1]_tests.cmake")
+  include("/home/user/Documents/redactor bobba/build/test_file[1]_tests.cmake")
+else()
+  add_test(test_file_NOT_BUILT test_file_NOT_BUILT)
+endif()
