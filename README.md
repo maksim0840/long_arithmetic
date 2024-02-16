@@ -6,6 +6,7 @@ cd long_arithmetic
 ```
 ```
 mkdir buid
+cd build
 cmake ..
 cmake --build .
 ```
