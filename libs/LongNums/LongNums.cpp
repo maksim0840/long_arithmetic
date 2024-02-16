@@ -198,7 +198,7 @@ namespace lnums {
 
 	std::string LongNum::get_value() const{ // convert to string
 		std::string result = "";
-
+		
 		int limit = std::min(this->len_float, DEFAULT_ACCURACY);
 		int printed_num_len = this->len_int;
 

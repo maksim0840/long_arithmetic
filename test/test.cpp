@@ -15,6 +15,7 @@ TEST(Assignment_operator, assignment) {
     EXPECT_EQ(num1.get_value(), "234798238989.8912389");
     EXPECT_EQ(num2.get_value(), "-359");
     EXPECT_EQ(num3.get_value(), "456.7911");
+    EXPECT_EQ(num4.get_value(), "0");
 }
 
 TEST(Constructor, constructor) {

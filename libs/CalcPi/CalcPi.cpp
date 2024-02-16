@@ -11,15 +11,16 @@ namespace cpi {
         pi.reserve(n + 1);
         int held_predigits_count = 0;
 
-        for (unsigned i = 0; i < n; i++) {
+        for (unsigned i = 0; i < n; ++i) {
             int carried = 0;
             int sum = 0;
 
             for (int j = len - 1; j >= 0; j--) {
-                sum = reminders[j] * 10 + carried;
-                int num = j;
+                reminders[j] *= 10;
+                sum = reminders[j] + carried;
                 int den = j * 2 + 1;
-                int quotient = sum / (j * 2 + 1);
+                int num = j;
+                int quotient = sum / den;
                 if (j > 0) {
                     reminders[j] = sum % den;
                 }
@@ -32,31 +33,30 @@ namespace cpi {
             int predigit = sum / 10;
 
             if (predigit == 9) {
-                held_predigits_count++;
+                ++held_predigits_count;
             }
-            else if (predigit == 10) {
-                predigit = 0;
-                for (int k = 1; k <= held_predigits_count; k++) {
-                    int replaced = pi[i - k] - '0';
-                    if (replaced == 9) {
-                        replaced = 0;
+            else {
+                if (predigit == 10) {
+                    predigit = 0;
+                    for (int k = 1; k <= held_predigits_count; ++k) {
+                        int replaced = pi[i - k] - '0';
+                        if (replaced == 9) {
+                            replaced = 0;
+                        }
+                        else {
+                            ++replaced;
+                        }
+                        pi[i - k] = replaced + '0';
                     }
-                    else {
-                        replaced++;
-                    }
-                    pi[i - k] = replaced + '0';
                 }
                 held_predigits_count = 1;
             }
-            else {
-                held_predigits_count = 1;
-            }
-            
 
             pi.push_back(predigit + '0');
-            if (i == 0 && n > 1) {
-                pi.push_back('.');
-            }
+        }
+
+        if (pi.length() >= 2) {
+            pi.insert(1, ".");
         }
 
         clock_t end_time = clock();
