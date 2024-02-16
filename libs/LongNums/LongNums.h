@@ -48,6 +48,13 @@ namespace lnums {
 
         CmpResult compare(const LongNum&) const;
 
+        enum  Stage{
+            INITIAL,
+            ADD_NUM,
+            INCREASE
+        };
+        void do_division_stage(const Stage, const LongNum&, LongNum&, int&);
+
     public:
         LongNum();
         /*explicit*/ LongNum(const std::string&);

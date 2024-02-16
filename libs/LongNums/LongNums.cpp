@@ -132,6 +132,12 @@ namespace lnums {
 	}
 
 	void LongNum::erase_insignificant_zeros() {
+		if (this->len_int == 0) {
+			++this->len_int;
+			++this->len;
+			this->value.push_front(0);
+		}
+
 		// Erase integer insignificant zeros
 		while (this->value.front() == 0 && this->len_int != 1) {
 			this->value.pop_front();
@@ -148,12 +154,6 @@ namespace lnums {
 
 		if ((*this).is_zero() == true) {
 			this->minus_flag = false;
-		}
-
-		if (this->len_int == 0) {
-			++this->len_int;
-			++this->len;
-			this->value.push_front(0);
 		}
 	}
 
@@ -184,21 +184,45 @@ namespace lnums {
 		}
 
 		if ((ind < this->len) && (ind == num2.len)) {
+			if (this->minus_flag == true) {
+				return CmpResult::SMALLER;
+			}
 			return CmpResult::BIGGER;
 		}
 		else if ((ind == this->len) && (ind < num2.len)) {
+			if (this->minus_flag == true) {
+				return CmpResult::BIGGER;
+			}
 			return CmpResult::SMALLER;
 		}
 		
 		return CmpResult::EQUAL;
 	}
 
+	void LongNum::do_division_stage(const Stage stage, const LongNum& num1, LongNum& divisible, int& num1_ind) {
+		if (num1_ind < num1.len) {
+			divisible.value.push_back(num1.value[num1_ind]);
+			divisible.increase_len_by_condition(num1_ind < num1.len_int);
+		}
+		else {
+			divisible.move_dot(1);
+			if (stage == Stage::INITIAL) {
+				this->value.push_back(0);
+				this->increase_len_by_condition(this->len_int == 0);
+			}
+		}
+		if (stage == Stage::INCREASE) {
+			this->value.push_back(0);
+			this->increase_len_by_condition(num1_ind < num1.len);
+		}
+		++num1_ind;
+	}
 
 	/* CLASS PUBLIC METHODS */
 
 	std::string LongNum::get_value() const{ // convert to string
 		std::string result = "";
-		
+
 		int limit = std::min(this->len_float, DEFAULT_ACCURACY);
 		int printed_num_len = this->len_int;
 
@@ -219,9 +243,8 @@ namespace lnums {
 			result.push_back(std::abs(this->value[i]) + '0');
 		}
 		return result;
-
 	}
-	
+
 	void LongNum::increase_len_by_condition(const bool condition) {
 		// Shorted function for adding value len
 		if (condition) {
@@ -262,7 +285,7 @@ namespace lnums {
 	LongNum LongNum::operator=(const std::string& str_num) {
 		bool float_part_flag = false;
 		(*this).reset_to_default();
-		
+
 		for (int i = 0; str_num[i] != '\0'; ++i) {
 			switch (str_num[i]) {
 				case '-':
@@ -437,7 +460,7 @@ namespace lnums {
 		}
 		
 		bool negative_res = determine_sign(num1, num2, Operation::DIVISION);
-		//bool negative_res = num1.determine_sign(num2, Operation::DIVISION);
+
 		num1.to_positive();
 		num2.to_positive();
 		// Discard zeros
@@ -448,45 +471,19 @@ namespace lnums {
 		
 		// Get initial number for division
 		while (divisible < num2 && result.len_float < DEFAULT_ACCURACY) {
-			if (num1_ind < num1.len) {
-				divisible.value.push_back(num1.value[num1_ind]);
-				divisible.increase_len_by_condition(num1_ind < num1.len_int);
-			}
-			else {
-				divisible.move_dot(1);
-
-				result.value.push_back(0);
-				result.increase_len_by_condition(result.len_int == 0);
-			}
-			++num1_ind;
+			result.do_division_stage(Stage::INITIAL, num1, divisible, num1_ind);
 		}
 
 
 		while (result.len_float < DEFAULT_ACCURACY && (divisible.is_zero() == false || num1_ind < num1.len)) {
 
 			if (divisible < num2) {
-				// (Add 1 num to divisible)
-				if (num1_ind < num1.len) {
-					divisible.value.push_back(num1.value[num1_ind]);
-					divisible.increase_len_by_condition(num1_ind < num1.len_int);
-				}
-				else {
-					divisible.move_dot(1);
-				}
-				++num1_ind;
+				// Add next num to divisible
+				result.do_division_stage(Stage::ADD_NUM, num1, divisible, num1_ind);
 				
 				// (Add nums to divisible) and (0 to results)
 				while (divisible < num2) {
-					if (num1_ind < num1.len) {
-						divisible.value.push_back(num1.value[num1_ind]);
-						divisible.increase_len_by_condition(num1_ind < num1.len_int);
-					}
-					else {
-						divisible.move_dot(1);
-					}
-					result.value.push_back(0);
-					result.increase_len_by_condition(num1_ind < num1.len);
-					++num1_ind;
+					result.do_division_stage(Stage::INCREASE, num1, divisible, num1_ind);
 				}
 			}
 

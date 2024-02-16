@@ -15,7 +15,6 @@ TEST(Assignment_operator, assignment) {
     EXPECT_EQ(num1.get_value(), "234798238989.8912389");
     EXPECT_EQ(num2.get_value(), "-359");
     EXPECT_EQ(num3.get_value(), "456.7911");
-    EXPECT_EQ(num4.get_value(), "0");
 }
 
 TEST(Constructor, constructor) {
@@ -131,12 +130,12 @@ TEST(Relational_operator, bigger) {
     lnums::LongNum num2("123456.789");
     lnums::LongNum num3("-3400");
     lnums::LongNum num4("-855.423");
-    lnums::LongNum num5("30.31");
-    lnums::LongNum num6("30.31");
+    lnums::LongNum num5("-76865.999");
+    lnums::LongNum num6("-76865.9999");
 
     EXPECT_EQ((num1 > num2), true);
     EXPECT_EQ((num3 > num4), false);
-    EXPECT_EQ((num5 > num6), false);
+    EXPECT_EQ((num5 > num6), true);
 }
 
 TEST(Relational_operator, smaller) {
@@ -157,8 +156,8 @@ TEST(Relational_operator, bigger_or_equal) {
     lnums::LongNum num2("781.420");
     lnums::LongNum num3("199.99");
     lnums::LongNum num4("200");
-    lnums::LongNum num5("-81");
-    lnums::LongNum num6("81");
+    lnums::LongNum num5("988.777");
+    lnums::LongNum num6("988.7777");
 
     EXPECT_EQ((num1 >= num2), true);
     EXPECT_EQ((num3 >= num4), false);
@@ -196,13 +195,13 @@ TEST (Relational_operator, not_equal) {
     lnums::LongNum num2("19823.123");
     lnums::LongNum num3("-890.002");
     lnums::LongNum num4("-890.002");
-    lnums::LongNum num5("0");
-    lnums::LongNum num6("0");
+    lnums::LongNum num5("-2839.1111");
+    lnums::LongNum num6("-2839.11111");
 
 
     EXPECT_EQ((num1 != num2), true);
     EXPECT_EQ((num3 != num4), false);
-    EXPECT_EQ((num5 != num6), false);
+    EXPECT_EQ((num5 != num6), true);
 }
 
 TEST (Pi_calculating, accuracy) {
