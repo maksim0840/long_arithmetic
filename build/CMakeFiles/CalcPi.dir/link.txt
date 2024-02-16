@@ -1,2 +1,0 @@
-/usr/bin/ar qc libCalcPi.a CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o
-/usr/bin/ranlib libCalcPi.a
