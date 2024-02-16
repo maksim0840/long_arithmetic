@@ -6,5 +6,5 @@
 #include <ctime>
 
 namespace cpi {
-	std::string calculate_pi(const unsigned n, const bool);
+	std::string calculate_pi(const unsigned, const bool time_counter=false);
 }

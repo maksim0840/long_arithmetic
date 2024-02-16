@@ -1,5 +1,5 @@
 CMakeFiles/main_file.dir/main.cpp.o: \
- /home/user/Documents/redactor\ bobba/main.cpp /usr/include/stdc-predef.h \
+ /home/user/Documents/long_arithmetic/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -156,7 +156,7 @@ CMakeFiles/main_file.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/user/Documents/redactor\ bobba/libs/LongNums/LongNums.h \
+ /home/user/Documents/long_arithmetic/libs/LongNums/LongNums.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
@@ -194,9 +194,9 @@ CMakeFiles/main_file.dir/main.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/user/Documents/redactor\ bobba/libs/CalcPi/CalcPi.h \
+ /home/user/Documents/long_arithmetic/libs/LongNums/LongNums.cpp \
+ /home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
- /usr/include/c++/11/bits/parse_numbers.h
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/ctime \
+ /home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.cpp

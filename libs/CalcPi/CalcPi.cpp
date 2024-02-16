@@ -2,49 +2,62 @@
 
 namespace cpi {
 
-    std::string calculate_pi(const unsigned n, const bool time_counter = false) {
+    std::string calculate_pi(const unsigned n, const bool time_counter) {
         clock_t start_time = clock();
-        
+
+        int len = n * 10 / 3 + 1;
+        std::vector<int> reminders(len, 2);
         std::string pi;
-        pi.reserve(n);
-        int boxes = (n) * 10 / 3 + 1;
-        std::vector<int> reminders(boxes, 2);
-        int heldDigits = 0;
-        for (int i = 0; i < n; i++) {
-            int carriedOver = 0;
+        pi.reserve(n + 1);
+        int held_predigits_count = 0;
+
+        for (unsigned i = 0; i < n; i++) {
+            int carried = 0;
             int sum = 0;
-            for (int j = boxes - 1; j >= 0; j--) {
-                reminders[j] *= 10;
-                sum = reminders[j] + carriedOver;
+
+            for (int j = len - 1; j >= 0; j--) {
+                sum = reminders[j] * 10 + carried;
+                int num = j;
+                int den = j * 2 + 1;
                 int quotient = sum / (j * 2 + 1);
-                reminders[j] = sum % (j * 2 + 1);
-                carriedOver = quotient * j;
+                if (j > 0) {
+                    reminders[j] = sum % den;
+                }
+                else {
+                    reminders[j] = sum % 10;
+                }
+                carried = quotient * num;
             }
-            reminders[0] = sum % 10;
-            int q = sum / 10;
-            if (q == 9) {
-                heldDigits++;
-            } else if (q == 10) {
-                q = 0;
-                for (int k = 1; k <= heldDigits; k++) {
+
+            int predigit = sum / 10;
+
+            if (predigit == 9) {
+                held_predigits_count++;
+            }
+            else if (predigit == 10) {
+                predigit = 0;
+                for (int k = 1; k <= held_predigits_count; k++) {
                     int replaced = pi[i - k] - '0';
                     if (replaced == 9) {
                         replaced = 0;
-                    } else {
+                    }
+                    else {
                         replaced++;
                     }
                     pi[i - k] = replaced + '0';
                 }
-                heldDigits = 1;
-            } else {
-                heldDigits = 1;
+                held_predigits_count = 1;
             }
-            pi.push_back(q + '0');
-        }
-        if (pi.length() >= 2) {
-            pi.insert(1, ".");
-        }
+            else {
+                held_predigits_count = 1;
+            }
+            
 
+            pi.push_back(predigit + '0');
+            if (i == 0 && n > 1) {
+                pi.push_back('.');
+            }
+        }
 
         clock_t end_time = clock();
 
@@ -54,5 +67,4 @@ namespace cpi {
 
         return pi;
     }
-
 }

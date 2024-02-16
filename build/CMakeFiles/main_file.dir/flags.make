@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/user/Documents/redactor bobba/build" -I"/home/user/Documents/redactor bobba/libs/LongNums" -I"/home/user/Documents/redactor bobba/libs/CalcPi"
+CXX_INCLUDES = -I/home/user/Documents/long_arithmetic/build -I/home/user/Documents/long_arithmetic/libs/LongNums -I/home/user/Documents/long_arithmetic/libs/CalcPi
 
-CXX_FLAGS = -std=gnu++20
+CXX_FLAGS = -g -O0 -Wall -fprofile-arcs -ftest-coverage -std=gnu++20
 

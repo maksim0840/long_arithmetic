@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/main_file.dir/main.cpp.o -o main_file  libLongNums.a libCalcPi.a 
+/usr/bin/c++ -g -O0 -Wall -fprofile-arcs -ftest-coverage -fprofile-arcs -ftest-coverage CMakeFiles/main_file.dir/main.cpp.o -o main_file  libLongNums.a libCalcPi.a 

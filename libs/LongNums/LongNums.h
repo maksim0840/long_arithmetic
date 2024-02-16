@@ -7,24 +7,26 @@
 #include <math.h>
 #include <compare> // strong_ordering
 
-#define DEFAULT_ACCURACY 50
+#define DEFAULT_ACCURACY 50 // max accuracy of all LongNums
+#define DOUBLE_ACCURACY 15 // accuracy of converting double to LongNum
 
 namespace lnums {
 
     class LongNum {
     private:
+        template <class variable_int>
+        void put_int(variable_int);
+
         std::deque<char> value;
         int len_int = 0; // len of int part
         int len_float = 0; // len of float part
         int len = 0;
         bool minus_flag = false;
-        // Accuracy of float nums (only affects the output)
-        int accuracy = DEFAULT_ACCURACY; // accuracy res = max(num1.accuracy, num2.accuracy)
 
         bool is_zero() const;
-        void multiply_by_10(const int);
         void increase_len_by_condition(const bool);
         void add_digit_to_index(const int, const int);
+        void move_dot(int);
         void reset_to_default();
         void reset_to_zero();
         void to_positive();
@@ -53,10 +55,6 @@ namespace lnums {
         LongNum(const int);
 
         std::string get_value() const; // convert to string
-
-        /* in progress */
-        void set_accuracy_limit(const int);
-        /* in progress */
 
         LongNum operator+() const;
         LongNum operator-() const;

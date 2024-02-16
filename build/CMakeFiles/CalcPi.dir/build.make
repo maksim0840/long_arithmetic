@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/user/Documents/redactor bobba"
+CMAKE_SOURCE_DIR = /home/user/Documents/long_arithmetic
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/user/Documents/redactor bobba/build"
+CMAKE_BINARY_DIR = /home/user/Documents/long_arithmetic/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CalcPi.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/CalcPi.dir/flags.make
 CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o: CMakeFiles/CalcPi.dir/flags.make
 CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o: ../libs/CalcPi/CalcPi.cpp
 CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o: CMakeFiles/CalcPi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/user/Documents/redactor bobba/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o -MF CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o.d -o CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o -c "/home/user/Documents/redactor bobba/libs/CalcPi/CalcPi.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/long_arithmetic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o -MF CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o.d -o CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o -c /home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.cpp
 
 CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/user/Documents/redactor bobba/libs/CalcPi/CalcPi.cpp" > CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.cpp > CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.i
 
 CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/user/Documents/redactor bobba/libs/CalcPi/CalcPi.cpp" -o CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.cpp -o CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.s
 
 # Object files for target CalcPi
 CalcPi_OBJECTS = \
@@ -93,7 +93,7 @@ CalcPi_EXTERNAL_OBJECTS =
 libCalcPi.a: CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o
 libCalcPi.a: CMakeFiles/CalcPi.dir/build.make
 libCalcPi.a: CMakeFiles/CalcPi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/user/Documents/redactor bobba/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libCalcPi.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Documents/long_arithmetic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libCalcPi.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/CalcPi.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CalcPi.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/CalcPi.dir/clean:
 .PHONY : CMakeFiles/CalcPi.dir/clean
 
 CMakeFiles/CalcPi.dir/depend:
-	cd "/home/user/Documents/redactor bobba/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/user/Documents/redactor bobba" "/home/user/Documents/redactor bobba" "/home/user/Documents/redactor bobba/build" "/home/user/Documents/redactor bobba/build" "/home/user/Documents/redactor bobba/build/CMakeFiles/CalcPi.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/user/Documents/long_arithmetic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Documents/long_arithmetic /home/user/Documents/long_arithmetic /home/user/Documents/long_arithmetic/build /home/user/Documents/long_arithmetic/build /home/user/Documents/long_arithmetic/build/CMakeFiles/CalcPi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CalcPi.dir/depend
 

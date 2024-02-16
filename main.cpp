@@ -7,9 +7,11 @@
 #include "libs/CalcPi/CalcPi.cpp"
 
 int main(void) {
-	lnums::LongNum a(200);
-	lnums::LongNum b(201);
+    std::cout << cpi::calculate_pi(100, true) << "\n\n";
 
-    std::cout << cpi::calculate_pi(100, true) << '\n';
+    lnums::LongNum num1("9999");
+    lnums::LongNum num2("11");
+
+    std::cout << (num1 / num2).get_value() << '\n'; // 123456913356789.9
 	return 0;
 }

@@ -1,0 +1,18 @@
+test_file_NOT_BUILT 0 0
+Assignment_operator.assignment 6 0.000469711
+Constructor.constructor 6 0.000530875
+Unary_arithmetic_operator.plus 6 0.000434922
+Unary_arithmetic_operator.minus 6 0.000497814
+Binary_arithmetic_operator.addition 6 0.000415845
+Binary_arithmetic_operator.subtraction 6 0.000425337
+Binary_arithmetic_operator.composition 6 0.000529943
+Binary_arithmetic_operator.division 6 0.000698487
+Relational_operator.bigger 6 0.000399798
+Relational_operator.smaller 6 0.000356682
+Relational_operator.bigger_or_equal 6 0.000382894
+Relational_operator.smaller_or_equal 6 0.000427867
+Relational_operator.equal 6 0.000427599
+Relational_operator.not_equal 6 0.000368454
+Pi_calculating.accuracy 2 0
+---
+Pi_calculating.accuracy

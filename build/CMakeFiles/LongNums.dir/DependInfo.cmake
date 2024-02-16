@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/user/Documents/redactor bobba/libs/LongNums/LongNums.cpp" "CMakeFiles/LongNums.dir/libs/LongNums/LongNums.cpp.o" "gcc" "CMakeFiles/LongNums.dir/libs/LongNums/LongNums.cpp.o.d"
+  "/home/user/Documents/long_arithmetic/libs/LongNums/LongNums.cpp" "CMakeFiles/LongNums.dir/libs/LongNums/LongNums.cpp.o" "gcc" "CMakeFiles/LongNums.dir/libs/LongNums/LongNums.cpp.o.d"
   )
 
 # Targets to which this target links.

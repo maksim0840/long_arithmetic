@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/user/Documents/redactor bobba/libs/CalcPi/CalcPi.cpp" "CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o" "gcc" "CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o.d"
+  "/home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.cpp" "CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o" "gcc" "CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o.d"
   )
 
 # Targets to which this target links.

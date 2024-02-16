@@ -1,7 +1,7 @@
 CMakeFiles/test_file.dir/test/test.cpp.o: \
- /home/user/Documents/redactor\ bobba/test/test.cpp \
+ /home/user/Documents/long_arithmetic/test/test.cpp \
  /usr/include/stdc-predef.h \
- /home/user/Documents/redactor\ bobba/libs/LongNums/LongNums.h \
+ /home/user/Documents/long_arithmetic/libs/LongNums/LongNums.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -195,13 +195,11 @@ CMakeFiles/test_file.dir/test/test.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/user/Documents/redactor\ bobba/libs/CalcPi/CalcPi.h \
+ /home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
- /usr/include/c++/11/bits/parse_numbers.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/ctime \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -241,10 +239,10 @@ CMakeFiles/test_file.dir/test/test.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -267,9 +265,11 @@ CMakeFiles/test_file.dir/test/test.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
  /usr/include/regex.h /usr/include/c++/11/condition_variable \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/stop_token \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/semaphore /usr/include/c++/11/bits/semaphore_base.h \
@@ -279,12 +279,12 @@ CMakeFiles/test_file.dir/test/test.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/any /usr/include/c++/11/optional \
  /usr/include/c++/11/variant \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
@@ -314,16 +314,16 @@ CMakeFiles/test_file.dir/test/test.cpp.o: \
  /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/set \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
  /usr/include/c++/11/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- /home/user/Documents/redactor\ bobba/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
+ /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h

@@ -1,7 +1,7 @@
 CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o: \
- /home/user/Documents/redactor\ bobba/libs/CalcPi/CalcPi.cpp \
+ /home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.cpp \
  /usr/include/stdc-predef.h \
- /home/user/Documents/redactor\ bobba/libs/CalcPi/CalcPi.h \
+ /home/user/Documents/long_arithmetic/libs/CalcPi/CalcPi.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -161,6 +161,4 @@ CMakeFiles/CalcPi.dir/libs/CalcPi/CalcPi.cpp.o: \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/limits \
- /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/ctime

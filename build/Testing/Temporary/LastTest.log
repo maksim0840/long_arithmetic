@@ -1,0 +1,417 @@
+Start testing: Feb 16 05:12 MSK
+----------------------------------------------------------
+1/15 Testing: Assignment_operator.assignment
+1/15 Test: Assignment_operator.assignment
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Assignment_operator.assignment" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Assignment_operator.assignment" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Assignment_operator.assignment
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Assignment_operator
+[ RUN      ] Assignment_operator.assignment
+[       OK ] Assignment_operator.assignment (0 ms)
+[----------] 1 test from Assignment_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Assignment_operator.assignment" end time: Feb 16 05:12 MSK
+"Assignment_operator.assignment" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/15 Testing: Constructor.constructor
+2/15 Test: Constructor.constructor
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Constructor.constructor" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Constructor.constructor" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Constructor.constructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Constructor
+[ RUN      ] Constructor.constructor
+[       OK ] Constructor.constructor (0 ms)
+[----------] 1 test from Constructor (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Constructor.constructor" end time: Feb 16 05:12 MSK
+"Constructor.constructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/15 Testing: Unary_arithmetic_operator.plus
+3/15 Test: Unary_arithmetic_operator.plus
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Unary_arithmetic_operator.plus" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Unary_arithmetic_operator.plus" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Unary_arithmetic_operator.plus
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Unary_arithmetic_operator
+[ RUN      ] Unary_arithmetic_operator.plus
+[       OK ] Unary_arithmetic_operator.plus (0 ms)
+[----------] 1 test from Unary_arithmetic_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Unary_arithmetic_operator.plus" end time: Feb 16 05:12 MSK
+"Unary_arithmetic_operator.plus" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/15 Testing: Unary_arithmetic_operator.minus
+4/15 Test: Unary_arithmetic_operator.minus
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Unary_arithmetic_operator.minus" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Unary_arithmetic_operator.minus" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Unary_arithmetic_operator.minus
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Unary_arithmetic_operator
+[ RUN      ] Unary_arithmetic_operator.minus
+[       OK ] Unary_arithmetic_operator.minus (0 ms)
+[----------] 1 test from Unary_arithmetic_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Unary_arithmetic_operator.minus" end time: Feb 16 05:12 MSK
+"Unary_arithmetic_operator.minus" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/15 Testing: Binary_arithmetic_operator.addition
+5/15 Test: Binary_arithmetic_operator.addition
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Binary_arithmetic_operator.addition" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Binary_arithmetic_operator.addition" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Binary_arithmetic_operator.addition
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Binary_arithmetic_operator
+[ RUN      ] Binary_arithmetic_operator.addition
+[       OK ] Binary_arithmetic_operator.addition (0 ms)
+[----------] 1 test from Binary_arithmetic_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Binary_arithmetic_operator.addition" end time: Feb 16 05:12 MSK
+"Binary_arithmetic_operator.addition" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/15 Testing: Binary_arithmetic_operator.subtraction
+6/15 Test: Binary_arithmetic_operator.subtraction
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Binary_arithmetic_operator.subtraction" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Binary_arithmetic_operator.subtraction" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Binary_arithmetic_operator.subtraction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Binary_arithmetic_operator
+[ RUN      ] Binary_arithmetic_operator.subtraction
+[       OK ] Binary_arithmetic_operator.subtraction (0 ms)
+[----------] 1 test from Binary_arithmetic_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Binary_arithmetic_operator.subtraction" end time: Feb 16 05:12 MSK
+"Binary_arithmetic_operator.subtraction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/15 Testing: Binary_arithmetic_operator.composition
+7/15 Test: Binary_arithmetic_operator.composition
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Binary_arithmetic_operator.composition" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Binary_arithmetic_operator.composition" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Binary_arithmetic_operator.composition
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Binary_arithmetic_operator
+[ RUN      ] Binary_arithmetic_operator.composition
+[       OK ] Binary_arithmetic_operator.composition (0 ms)
+[----------] 1 test from Binary_arithmetic_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Binary_arithmetic_operator.composition" end time: Feb 16 05:12 MSK
+"Binary_arithmetic_operator.composition" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/15 Testing: Binary_arithmetic_operator.division
+8/15 Test: Binary_arithmetic_operator.division
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Binary_arithmetic_operator.division" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Binary_arithmetic_operator.division" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Binary_arithmetic_operator.division
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Binary_arithmetic_operator
+[ RUN      ] Binary_arithmetic_operator.division
+[       OK ] Binary_arithmetic_operator.division (1 ms)
+[----------] 1 test from Binary_arithmetic_operator (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Binary_arithmetic_operator.division" end time: Feb 16 05:12 MSK
+"Binary_arithmetic_operator.division" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/15 Testing: Relational_operator.bigger
+9/15 Test: Relational_operator.bigger
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Relational_operator.bigger" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Relational_operator.bigger" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Relational_operator.bigger
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Relational_operator
+[ RUN      ] Relational_operator.bigger
+[       OK ] Relational_operator.bigger (0 ms)
+[----------] 1 test from Relational_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Relational_operator.bigger" end time: Feb 16 05:12 MSK
+"Relational_operator.bigger" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/15 Testing: Relational_operator.smaller
+10/15 Test: Relational_operator.smaller
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Relational_operator.smaller" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Relational_operator.smaller" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Relational_operator.smaller
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Relational_operator
+[ RUN      ] Relational_operator.smaller
+[       OK ] Relational_operator.smaller (0 ms)
+[----------] 1 test from Relational_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Relational_operator.smaller" end time: Feb 16 05:12 MSK
+"Relational_operator.smaller" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/15 Testing: Relational_operator.bigger_or_equal
+11/15 Test: Relational_operator.bigger_or_equal
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Relational_operator.bigger_or_equal" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Relational_operator.bigger_or_equal" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Relational_operator.bigger_or_equal
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Relational_operator
+[ RUN      ] Relational_operator.bigger_or_equal
+[       OK ] Relational_operator.bigger_or_equal (0 ms)
+[----------] 1 test from Relational_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Relational_operator.bigger_or_equal" end time: Feb 16 05:12 MSK
+"Relational_operator.bigger_or_equal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/15 Testing: Relational_operator.smaller_or_equal
+12/15 Test: Relational_operator.smaller_or_equal
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Relational_operator.smaller_or_equal" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Relational_operator.smaller_or_equal" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Relational_operator.smaller_or_equal
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Relational_operator
+[ RUN      ] Relational_operator.smaller_or_equal
+[       OK ] Relational_operator.smaller_or_equal (0 ms)
+[----------] 1 test from Relational_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Relational_operator.smaller_or_equal" end time: Feb 16 05:12 MSK
+"Relational_operator.smaller_or_equal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/15 Testing: Relational_operator.equal
+13/15 Test: Relational_operator.equal
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Relational_operator.equal" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Relational_operator.equal" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Relational_operator.equal
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Relational_operator
+[ RUN      ] Relational_operator.equal
+[       OK ] Relational_operator.equal (0 ms)
+[----------] 1 test from Relational_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Relational_operator.equal" end time: Feb 16 05:12 MSK
+"Relational_operator.equal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/15 Testing: Relational_operator.not_equal
+14/15 Test: Relational_operator.not_equal
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Relational_operator.not_equal" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Relational_operator.not_equal" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Relational_operator.not_equal
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Relational_operator
+[ RUN      ] Relational_operator.not_equal
+[       OK ] Relational_operator.not_equal (0 ms)
+[----------] 1 test from Relational_operator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Relational_operator.not_equal" end time: Feb 16 05:12 MSK
+"Relational_operator.not_equal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/15 Testing: Pi_calculating.accuracy
+15/15 Test: Pi_calculating.accuracy
+Command: "/home/user/Documents/long_arithmetic/build/test_file" "--gtest_filter=Pi_calculating.accuracy" "--gtest_also_run_disabled_tests"
+Directory: /home/user/Documents/long_arithmetic/build
+"Pi_calculating.accuracy" start time: Feb 16 05:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/user/Documents/long_arithmetic/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Pi_calculating.accuracy
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Pi_calculating
+[ RUN      ] Pi_calculating.accuracy
+/home/user/Documents/long_arithmetic/test/test.cpp:211: Failure
+Expected equality of these values:
+  cpi::calculate_pi(100)
+    Which is: "3.141592653589793238462643383270402884197169399375105820974944592307816406286208998637034825342117067"
+  "3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067"
+[  FAILED  ] Pi_calculating.accuracy (0 ms)
+[----------] 1 test from Pi_calculating (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Pi_calculating.accuracy
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Pi_calculating.accuracy" end time: Feb 16 05:12 MSK
+"Pi_calculating.accuracy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 16 05:12 MSK

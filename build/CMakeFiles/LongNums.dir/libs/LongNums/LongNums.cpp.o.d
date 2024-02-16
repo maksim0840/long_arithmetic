@@ -1,7 +1,7 @@
 CMakeFiles/LongNums.dir/libs/LongNums/LongNums.cpp.o: \
- /home/user/Documents/redactor\ bobba/libs/LongNums/LongNums.cpp \
+ /home/user/Documents/long_arithmetic/libs/LongNums/LongNums.cpp \
  /usr/include/stdc-predef.h \
- /home/user/Documents/redactor\ bobba/libs/LongNums/LongNums.h \
+ /home/user/Documents/long_arithmetic/libs/LongNums/LongNums.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

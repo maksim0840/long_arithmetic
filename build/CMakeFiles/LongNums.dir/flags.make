@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -std=gnu++20
+CXX_FLAGS = -g -O0 -Wall -fprofile-arcs -ftest-coverage -std=gnu++20
 

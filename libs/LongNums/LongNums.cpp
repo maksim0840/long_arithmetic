@@ -1,13 +1,5 @@
 #include "LongNums.h"
 
-double ten(double num, int count) {
-	double result = 0;
-	for (int i = 0; i != count; ++i) {
-		result += num;
-	}
-	return result;
-}
-
 namespace lnums {
 	
 	LongNum::LongNum() {
@@ -28,7 +20,20 @@ namespace lnums {
 
 
 	/* CLASS PRIVATE METHODS */
-
+	template <class variable_int>
+	void LongNum::put_int(variable_int num) {
+		while (num > 0) {
+			if (this->minus_flag == true) {
+				this->value.push_front(-1 * (num % 10));
+			}
+			else {
+				this->value.push_front(num % 10);
+			}
+			++this->len_int;
+			++this->len;
+			num /= 10;
+		}	
+	}
 
 	void LongNum::add_digit_to_index(const int digit, const int index) {
 		if (index >= 0) {
@@ -109,24 +114,21 @@ namespace lnums {
 
 	}
 
-	void LongNum::multiply_by_10(const int count) {
-
-		for (int i = 0; i != count; ++i) {
-			if (this->len_float == 0) {
+	void LongNum::move_dot(int n) { // == value * 10^n
+		while (n != 0) {
+			if (n > 0) {
 				this->value.push_back(0);
 				++this->len_int;
-				++this->len;
+				--n;
 			}
-			else {
-				if ((this->len_int == 1 && this->value.front() == 0)) { // 0.float_part situation
-					this->value.pop_front();
-				}
-				else {
-					++this->len_int;
-				}
-				--this->len_float;
+			else { // n < 0
+				this->value.push_front(0);
+				++this->len_float;
+				++n;
 			}
+			++this->len;
 		}
+		(*this).erase_insignificant_zeros();
 	}
 
 	void LongNum::erase_insignificant_zeros() {
@@ -146,6 +148,12 @@ namespace lnums {
 
 		if ((*this).is_zero() == true) {
 			this->minus_flag = false;
+		}
+
+		if (this->len_int == 0) {
+			++this->len_int;
+			++this->len;
+			this->value.push_front(0);
 		}
 	}
 
@@ -191,7 +199,7 @@ namespace lnums {
 	std::string LongNum::get_value() const{ // convert to string
 		std::string result = "";
 
-		int limit = std::min(this->len_float, this->accuracy);
+		int limit = std::min(this->len_float, DEFAULT_ACCURACY);
 		int printed_num_len = this->len_int;
 
 		// Find index on the last float digit != 0
@@ -213,11 +221,7 @@ namespace lnums {
 		return result;
 
 	}
-
-	void LongNum::set_accuracy_limit(const int limit) {
-		this->accuracy = limit;
-	}
-
+	
 	void LongNum::increase_len_by_condition(const bool condition) {
 		// Shorted function for adding value len
 		if (condition) {
@@ -230,8 +234,6 @@ namespace lnums {
 	}
 
 	/* BOOL OPERATORS */
-
-
 
 
 	std::strong_ordering LongNum::operator<=>(const LongNum& num2) const {
@@ -299,25 +301,9 @@ namespace lnums {
 			num *= -1;
 		}
 
-		while (num > 0) {
-			if (this->minus_flag == true) {
-				this->value.push_front(-1 * (num % 10));
-			}
-			else {
-				this->value.push_front(num % 10);
-			}
+		(*this).put_int(num);
 
-			num /= 10;
-			++this->len_int;
-			++this->len;
-		}
-
-		if (this->len == 0) {
-			++this->len_int;
-			++this->len;
-			this->value.push_back(0);
-		}
-
+		(*this).erase_insignificant_zeros();
 		return *this;
 	}
 
@@ -328,35 +314,13 @@ namespace lnums {
 			this->minus_flag = true;
 			num *= -1;
 		}
-		int order = 0;
-		while (num > 1) {
-			int digit = static_cast<int>(num) % 10;
-			if (this->minus_flag == true) {
-				this->value.push_front(-1 * digit);
-			}
-			else {
-				this->value.push_front(digit);
-			}
-			++this->len_int;
-			++this->len;
-			++order;
 
-			num /= 10;
-		}
+		long long int int_part = static_cast<long long int>(num);
+		(*this).put_int(int_part);
 
-		num = num * std::pow(10, order);
-
-		if (this->len == 0) {
-			++this->len_int;
-			++this->len;
-			this->value.push_back(0);
-		}
-
-		order = 0;
-		while (this->value.back() != 0) {
+		while (this->len != DOUBLE_ACCURACY) {
 			num *= 10;
-			int digit = static_cast<int>(num) % 10;
-
+			char digit = static_cast<long long int>(num) % 10;
 			if (this->minus_flag == true) {
 				this->value.push_back(-1 * digit);
 			}
@@ -365,7 +329,7 @@ namespace lnums {
 			}
 			++this->len_float;
 			++this->len;
-			++order;
+
 		}
 
 		(*this).erase_insignificant_zeros();
@@ -454,7 +418,7 @@ namespace lnums {
 
 		for (int i = 0; i != num2.len; ++i) {
 			LongNum new_element = mult[num2.value[num2.len - 1 - i]];
-			new_element.multiply_by_10(i);
+			new_element.move_dot(i - num2.len_float);
 		
 			result = result + new_element;
 		}
@@ -469,7 +433,7 @@ namespace lnums {
 		LongNum divisible; // part of num1
 
 		if (num2.is_zero()) {
-			exit(-1);
+			throw "Error - division by zero";
 		}
 		
 		bool negative_res = determine_sign(num1, num2, Operation::DIVISION);
@@ -477,20 +441,19 @@ namespace lnums {
 		num1.to_positive();
 		num2.to_positive();
 		// Discard zeros
-		num1.multiply_by_10(num2.len_float);
-		num2.multiply_by_10(num2.len_float);
+		num1.move_dot(num2.len_float);
+		num2.move_dot(num2.len_float);
 
-		int limit = num1.accuracy;
 		int num1_ind = 0;
 		
 		// Get initial number for division
-		while (divisible < num2 && result.len_float < limit) {
+		while (divisible < num2 && result.len_float < DEFAULT_ACCURACY) {
 			if (num1_ind < num1.len) {
 				divisible.value.push_back(num1.value[num1_ind]);
 				divisible.increase_len_by_condition(num1_ind < num1.len_int);
 			}
 			else {
-				divisible.multiply_by_10(1);
+				divisible.move_dot(1);
 
 				result.value.push_back(0);
 				result.increase_len_by_condition(result.len_int == 0);
@@ -499,7 +462,7 @@ namespace lnums {
 		}
 
 
-		while (result.len_float < limit && (divisible.is_zero() == false || num1_ind < num1.len)) {
+		while (result.len_float < DEFAULT_ACCURACY && (divisible.is_zero() == false || num1_ind < num1.len)) {
 
 			if (divisible < num2) {
 				// (Add 1 num to divisible)
@@ -508,7 +471,7 @@ namespace lnums {
 					divisible.increase_len_by_condition(num1_ind < num1.len_int);
 				}
 				else {
-					divisible.multiply_by_10(1);
+					divisible.move_dot(1);
 				}
 				++num1_ind;
 				
@@ -519,7 +482,7 @@ namespace lnums {
 						divisible.increase_len_by_condition(num1_ind < num1.len_int);
 					}
 					else {
-						divisible.multiply_by_10(1);
+						divisible.move_dot(1);
 					}
 					result.value.push_back(0);
 					result.increase_len_by_condition(num1_ind < num1.len);
@@ -538,7 +501,6 @@ namespace lnums {
 
 		}
 
-		result.accuracy = limit;
 		result.erase_insignificant_zeros();
 		if (negative_res == true) {
 			result = -result;
