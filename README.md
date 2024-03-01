@@ -5,7 +5,7 @@ Include Lib (launch file: build/main_file)
 cd long_arithmetic
 ```
 ```
-mkdir buid
+mkdir build
 cd build
 cmake ..
 cmake --build .
